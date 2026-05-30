@@ -1,0 +1,143 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: 56px;
+  background: var(--navbar-bg);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.3s;
+}
+
+/* ── Kiri ── */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.trafficLights {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dot {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  cursor: default;
+  transition: filter 0.15s, transform 0.15s;
+}
+.dot:hover {
+  filter: brightness(1.25);
+  transform: scale(1.15);
+}
+
+.dotRed    { background: #ff5f57; box-shadow: 0 0 0 1px rgba(0,0,0,0.15); }
+.dotYellow { background: #febc2e; box-shadow: 0 0 0 1px rgba(0,0,0,0.15); }
+.dotGreen  { background: #28c840; box-shadow: 0 0 0 1px rgba(0,0,0,0.15); }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.brandIcon {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.brandName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+
+/* ── Tengah ── */
+.center {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--bg-muted);
+  padding: 0.25rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--border);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.3rem 0.875rem;
+  border-radius: 0.4rem;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.link:hover {
+  color: var(--text);
+  background-color: var(--bg-surface);
+}
+
+.active {
+  color: var(--text);
+  background-color: var(--bg-surface);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+.linkIcon {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+/* ── Kanan ── */
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-muted);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.themeToggle:hover {
+  background: var(--bg-surface);
+  color: var(--text);
+  border-color: var(--border-solid);
+}
+
+.themeIcon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.themeLabel {
+  font-size: 0.8rem;
+}

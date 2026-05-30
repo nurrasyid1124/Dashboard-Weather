@@ -1,0 +1,43 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #1e293b;
+  border-radius: 0.5rem;
+  color: #f1f5f9;
+}
+
+.day {
+  font-weight: 600;
+  min-width: 4rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  min-width: 2rem;
+  text-align: center;
+}
+
+.condition {
+  flex: 1;
+  color: #94a3b8;
+}
+
+.temps {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.tempMin {
+  color: #94a3b8;
+}
+
+.separator {
+  color: #475569;
+}
+
+.tempMax {
+  font-weight: 600;
+}
