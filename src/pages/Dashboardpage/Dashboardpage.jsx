@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import weatherData from '../../Data/WeatherData'
-import WeatherCard from '../../components/WeatherCard/WeatherCard'
-import WeatherDetail from '../../components/WeatherDetail/WeatherDetail'
-import ForecastList from '../../components/ForecastList/ForecastList'
-import styles from './DashboardPage.module.css'
+import WeatherCard from '../../component/Weathercard/Weathercard'
+import WeatherDetail from '../../component/WeatherDetail/WeatherDetail'
+import ForecastList from '../../component/ForecastList/ForecastList'
+import styles from './Dashboardpage.module.css'
 
 function DashboardPage() {
   const { kota } = useParams()

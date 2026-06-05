@@ -1,14 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { ThemeProvider } from './context/ThemeContext'
-import { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";                                          
-import weatherData from "../../data/weatherData";
-import WeatherCard from "../../components/WeatherCard/WeatherCard"; (x2)
-import Navbar from './components/Navbar/Navbar'
+import { ThemeProvider } from './context/Themecontext'
+import Navbar from './component/Navbar/Navbar'
 import HomePage from './pages/Homepage/Homepage'
-import DashboardPage from './pages/DashboardPage/DashboardPage'
-import AboutPage from './pages/AboutPage/AboutPage'
-import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
+import DashboardPage from './pages/Dashboardpage/Dashboardpage'
+import AboutPage from './pages/Aboutpage/Aboutpage'
+import NotFoundPage from './pages/Noutfoundpage/Noutfoundpage'
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import styles from './ForecastItem.module.css'
+import styles from './Forecastlem.module.css'
 
 function ForecastItem({ hari, ikon, kondisi, suhu_min, suhu_max }) {
   return (

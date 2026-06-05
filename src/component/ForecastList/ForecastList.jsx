@@ -1,4 +1,4 @@
-import ForecastItem from '../ForecastItem/ForecastItem'
+import ForecastItem from '../Forecastlem/Forecastlem'
 import styles from './ForecastList.module.css'
 
 function ForecastList({ prakiraan }) {

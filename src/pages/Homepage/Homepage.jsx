@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import weatherData from '../../Data/WeatherData'
-import CityCard from '../../components/CityCard/CityCard'
-import styles from './HomePage.module.css'
+import CityCard from '../../component/Citycard/CityCard'
+import styles from './Homepage.module.css'
 
 function HomePage() {
   const navigate = useNavigate()
